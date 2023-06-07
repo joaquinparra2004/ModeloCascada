@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    background-color: #f1f1f1;
+   
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para la sección de encriptación */
+  .encriptacion {
+    margin-bottom: 30px;
+  }
+  
+  .encriptacion label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5248ff;
+  }
+  
+  .encriptacion input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #6c63ff;
+    border-radius: 5px;
+  }
+  
+  .encriptacion .botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  
+  .encriptacion .botones input[type="button"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .encriptacion .botones input[type="button"]:hover {
+    background-color: #797878;
+    
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .encriptacion .botones input[type="button"]:hover:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  
+  .encriptacion .botones input[type="button"]:hover:before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Estilos para la sección de encriptado */
+  .encriptado {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #titulo-mensaje {
+    color: #6c63ff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6c63ff;
+  }
+  
+  .mensaje {
+    font-size: 18px;
+    margin-top: 10px;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo Cascada</title>
+    
+    <link rel="stylesheet" href="ModeloCascada.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="encriptacion">
+            <label for="numero">Ingrese aquí su número deseado</label>
+            <br />
+            <br />
+            <input type="number" name="numero" id="numero" class="encriptacion encriptacion__inputNumero">
+            <br />
+            <br />
+            <div class="encriptacion botones">
+                <input type="button" value="Encriptar" class="botones botones__encriptar" onclick="encriptar()">
+                <input type="button" value="Desencriptar" class="botones botones__desencriptar" onclick="desencriptar()">
+            </div>
+        </div>
+    
+        <div class="encriptado">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ingrese un número en el casillero</h2>
+                <p id="mensaje" class="mensaje"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="ModeloCascada.js"></script>
+
+</html>
